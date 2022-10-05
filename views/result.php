@@ -1,7 +1,7 @@
 <?php
-$message = 'This is saru';
+    $messsage ='This is saru';
 
-$article = '投稿';
-$name = '名前';
+    $article  =htmlspecialchars($_REQUEST['article']);
+    $name =htmlspecialchars($_REQUEST['name']);
 
-require_once 'form.tpl.php';
+    require_once 'bbs.tpl.php';

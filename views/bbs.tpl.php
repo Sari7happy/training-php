@@ -3,8 +3,8 @@
 <?php include('header.inc.php'); ?>
 
 <body>
-    <h1>フォーム</h1>
-    <p><?= $message ?></p>
+    <h1>1行掲示板</h1>
+    <!-- <p><?= $message ?></p>  -->
 
     <form action='result.php' method="post">
         <label for='article'>投稿</label>
@@ -19,13 +19,20 @@
     <p>
         <!-- issetは引数が存在しているか見極める関数 -->
         <?php
-        if(isset($article)) {
-            echo $article .',';
+        if (isset($article)) {
+            echo $article . ',';
         }
-        if(isset($name)) {
+        if (isset($name)) {
             echo $name;
-        } ?>
+        }
+        ?>
     </p>
+    <h2>投稿一覧</h2>
+    <?php foreach ($lines as $line) { ?>
+        <p><?= $line ?></p>
+
+    <?php } ?>
+
 
     <?php include('footer.inc.php'); ?>
 </body>
