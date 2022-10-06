@@ -16,17 +16,6 @@
 
     </form>
 
-    <p>
-        <!-- issetは引数が存在しているか見極める関数 -->
-        <?php
-        if (isset($article)) {
-            echo $article . ',';
-        }
-        if (isset($name)) {
-            echo $name;
-        }
-        ?>
-    </p>
     <h2>投稿一覧</h2>
     <?php foreach ($lines as $line) { ?>
         <p><?= $line ?></p>
