@@ -6,9 +6,13 @@
     $statement =$pdo ->prepare($sql);
     $statement ->execute();
 
+    $results =[];
     while ($row =$statement ->fetch(PDO::FETCH_ASSOC)) {
-        print_r($row);
-        echo('<br>');
+        $results[] = $row;
     }
     $statement = null;
     $pdo =null;
+
+
+    $message ='hello world';
+    require_once 'content.tpl.php';
