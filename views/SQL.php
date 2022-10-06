@@ -1,8 +1,8 @@
 <?php
 // データベースを繋ぐときのコード,passワード入れてdbname先を指定すると表示される
     $pdo =new PDO('mysql:host=localhost;dbname=paiza;charset=utf8','root','root');
-
-    $sql ='SELECT * FROM players';
+// SQL文を書いてデータを取り出す*は全てなのでそこの値を変えてみる、WHEREの後にどこから取り出すか書く
+    $sql ='SELECT * FROM players WHERE level >= 7';
     $statement =$pdo ->prepare($sql);
     $statement ->execute();
 
