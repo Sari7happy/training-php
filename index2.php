@@ -33,4 +33,4 @@ $array_member_4 = [
         ],
 ];
 
- echo $array_member_4['takahashi']['お母さん']['like season'];
+echo $array_member_4['takahashi']['お母さん']['like season'];
