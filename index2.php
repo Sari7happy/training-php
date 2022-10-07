@@ -1,30 +1,21 @@
 <?php
 
-// 配列は横一列に1,2,3で表す
-// 配列はarrayという意味で[]で表す,0から始まるので0は１になる
-// 配列１行version
-$array_1 = ['あああ', 2, 3];
 
-// 配列2,3行version
-$array_2 = [
-    ['あか', 'あお', 'きいろ'],
-    ['みどり', 'むらさき', 'くろ']
+
+
+// []で繋げれる,複数の連想配列
+$array_member_2 = [
+    '本田' =>[
+        'height' =>170,
+        'hobby' =>'soccer',
+        'subject' =>'数学'
+    ],
+    '香川' =>[
+        'height' =>179,
+        'hobby' =>'テニス',
+        'subject' =>'国語'
+        ]
 ];
 
-echo '<pre>';
-var_dump($array_2);
-echo '</pre>';
-// var_dumpで変数全て表示されるecho '<pre>'で縦表示
-
-// array[][];でその文字を指定
-echo $array_2[0][1];
-
-// 連想配列は＝>で表す,keyで表す
-$array_member = [
-    'name' => '本田',
-    'height' => 157,
-    'hobby' => 'サッカー'
-];
-
-echo $array_member['hobby'];
+echo $array_member_2['香川']['height'];
 ?>
