@@ -1,18 +1,22 @@
 <?php
 
+// 複数の値をあつかうとき
 
-// AND ORについて
-$signal_1 ='red';
-$signal_2 = 'yello';
-// AND
-if($signal_1  === 'red' && $signal_2 ==='blue'){
-    echo '赤と青です';
+$members = [
+    'name' => '本田',
+    'height' =>170,
+    'hobby' => 'soccer'
+];
+// as変数の単数形にする
+// foreach($members as $member){
+//     echo $member;
+
+
+// キーとバリューを表示
+foreach($members as $key =>$value) {
+    echo $key .'は'.$value. 'です。';
 }
 
-// OR
-if($signal_1  === 'red' ||$signal_2 ==='blue'){
-    echo '赤です';
-}
 
 
 
