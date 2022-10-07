@@ -15,4 +15,20 @@ function getComment($string){
 }
 getComment($comment3);
 
+
+// インプット引数なしアウトプット引数あり
+
+function getNumberOfComment(){
+    return 5;
+}
+  echo getNumberOfComment();
+
+// 引数2つ,戻り値あり
+function sumPrice($int1,$int2){
+    $int3 = $int1 + $int2;
+    return $int3;
+}
+$total = sumPrice(3,5);
+echo $total;
+
 ?>
