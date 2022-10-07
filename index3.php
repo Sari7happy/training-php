@@ -1,14 +1,11 @@
 <?php
-// 文字列のながさ
-$text ='あいうえお';
 
-// echo strlen($text);
+$test =123;
+$test_2 =456;
 
-echo mb_strlen($text);
-
-// 文字列を置換する機能
-$str = '文字列を田中します';
-echo str_replace('田中','たなか',$str);
-
-
+echo $test;
+var_dump($test);
+exit;
+echo $test_2;
+// exitはその作業を一旦止める
 ?>
