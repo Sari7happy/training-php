@@ -1,23 +1,22 @@
 <?php
 
-// 複数の値をあつかうとき
+// for繰り返し処理が決まっていたら、whileは繰り返すしょりが決まっていなかったら
+for($i =0;$i <10;$i++){
 
-$members = [
-    'name' => '本田',
-    'height' =>170,
-    'hobby' => 'soccer'
-];
-// as変数の単数形にする
-// foreach($members as $member){
-//     echo $member;
+    if($i === 5){
+        // break;
+    //    continue;
+    //    continueはその値を飛ばす
+        // breakはループ処理止める
+    }
+    echo $i;
 
 
-// キーとバリューを表示
-foreach($members as $key =>$value) {
-    echo $key .'は'.$value. 'です。';
 }
-
-
-
+$j=0;
+while($j < 5 ){
+    echo $j;
+    $j++;
+}
 
 ?>
