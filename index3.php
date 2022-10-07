@@ -1,22 +1,28 @@
 <?php
+// // switch文
+ $data =2;
+// switch($data){
+//     case 1:
+//         echo '1です。';
+//         break;
+//     case 2:
+//         echo '2です。';
+//         break;
+//     case 3:
+//         echo '3です。';
+//         break;
+//     default:
+//     echo '1-3ではありません';
+// }
 
-// for繰り返し処理が決まっていたら、whileは繰り返すしょりが決まっていなかったら
-for($i =0;$i <10;$i++){
-
-    if($i === 5){
-        // break;
-    //    continue;
-    //    continueはその値を飛ばす
-        // breakはループ処理止める
-    }
-    echo $i;
-
-
+if($data ===1){
+    echo '1';
 }
-$j=0;
-while($j < 5 ){
-    echo $j;
-    $j++;
+if($data ===2){
+    echo '2';
 }
-
+if($data ===3){
+    echo '3';
+                
+}
 ?>
